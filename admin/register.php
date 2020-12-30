@@ -2,10 +2,6 @@
 
 <?php  
 
-	// if($session->is_signed_in()) {
-	// 	redirect("index.php");
-	// }
-
 	if(isset($_POST['submit_reg'])) {
 		$username = trim($_POST['username']); 
 		$first_name = trim($_POST['first_name']);
