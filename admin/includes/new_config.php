@@ -9,9 +9,9 @@
 
 // REWMOTE DATABASE CONNECTION
 define('DB_HOST','remotemysql.com');
-define('DB_USER','TxclVTrRqH');
-define('DB_PASS','NqOLlXGkaL');
-define('DB_NAME','TxclVTrRqH');
+define('DB_USER','BVGHOtBq4K');
+define('DB_PASS','N9cBg7yuBp');
+define('DB_NAME','BVGHOtBq4K');
 
 
 ?>
