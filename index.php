@@ -23,7 +23,7 @@
     <div class="thumbnails row">
       <?php  foreach ($photos as $photo) : ?>
         <div class="col-xs-6 col-md-3">
-          <a href="photo.php?id=<?php echo $photo->id; ?>" class="thumbnail">
+          <a href="photo_view.php?id=<?php echo $photo->id; ?>" class="thumbnail">
             <img class="home_page_photo img-responsive" src="admin/<?php echo $photo->picture_path(); ?>">
           </a>
         </div>

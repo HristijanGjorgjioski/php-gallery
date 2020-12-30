@@ -1,10 +1,9 @@
-<?php  
-require_once("new_config.php");
+<?php 
 
 class Comment extends Db_object {
 
 	protected static $db_table = "comments";
-	protected static $db_table_fields = array('id', 'photo_id', 'author', 'body');
+	protected static $db_table_fields = array('id', 'photo_id', 'author','body');
 	public $id;
 	public $photo_id;
 	public $author;
@@ -15,8 +14,8 @@ class Comment extends Db_object {
 			$comment = new Comment();
 
 			$comment->photo_id = (int)$photo_id;
-			$comment->author = $author;
-			$comment->body = $body;
+			$comment->author   = $author;
+			$comment->body     = $body;
 
 			return $comment;
 		} else {
@@ -25,14 +24,16 @@ class Comment extends Db_object {
 	}
 
 	public static function find_the_comments($photo_id=0) {
+
 		global $database;
-		$sql = "SELECT * FROM " . self::$db_table;
-		$sql .= " WHERE photo_id= " . $database->escape_string($photo_id);
-		$sql .= " ORDER BY photo_id ASC"; 
+
+		$sql  = "SELECT * FROM " . self::$db_table;
+		$sql .= " WHERE photo_id = " . $database->escape_string($photo_id);
+		$sql .= " ORDER  BY photo_id ASC";
+
 		return self::find_by_query($sql);
-	}
 
-	
+	} 
 
-
-}?>
+} // End of Class User
+?>
