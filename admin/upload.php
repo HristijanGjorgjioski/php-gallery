@@ -11,7 +11,7 @@ if(isset($_FILES['file'])) {
   if($photo->save()) {
     $message = "Photo uploaded succesfully";
   } else {
-    $message = join("<br>", $photo->errors);
+    $photo-save();
   }
 }
 
