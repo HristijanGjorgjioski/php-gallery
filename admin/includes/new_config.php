@@ -1,17 +1,9 @@
 <?php
 
 // DEVELOPMENT
-// define('DB_HOST','localhost');
-// define('DB_USER','root');
-// define('DB_PASS','');
-// define('DB_NAME','gallery_db');
-
-
-// REWMOTE DATABASE CONNECTION
-define('DB_HOST','remotemysql.com');
-define('DB_USER','BVGHOtBq4K');
-define('DB_PASS','N9cBg7yuBp');
-define('DB_NAME','BVGHOtBq4K');
-
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PASS','');
+define('DB_NAME','gallery_db');
 
 ?>
